@@ -1,0 +1,21 @@
+# Local credentials
+.env
+.env.*
+
+# Allow a safe configuration template
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
