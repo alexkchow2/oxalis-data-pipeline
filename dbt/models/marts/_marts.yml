@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fct_daily_sales
+    description: "Daily sales metrics by store, using validated transactions."
+    columns:
+      - name: transaction_date
+        description: "Date of the transaction."
+        data_tests:
+          - not_null
+
+      - name: store_id
+        description: "Standardized store identifier."
+        data_tests:
+          - not_null
+
+      - name: net_revenue
+        description: "Total revenue after discounts."
+        data_tests:
+          - not_null
