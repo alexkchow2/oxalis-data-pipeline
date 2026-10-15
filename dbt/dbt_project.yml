@@ -1,0 +1,16 @@
+name: oxalis_sales
+version: '1.0.0'
+config-version: 2
+
+profile: oxalis_sales
+
+model-paths: ["models"]
+
+models:
+  oxalis_sales:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

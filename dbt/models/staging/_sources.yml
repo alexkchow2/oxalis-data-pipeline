@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public
+    tables:
+      - name: raw_sales
+        description: "Original sales records loaded from CSV by the Python ETL."
+        columns:
+          - name: raw_row_id
+            tests:
+              - unique
+              - not_null
