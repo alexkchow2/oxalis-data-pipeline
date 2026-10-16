@@ -147,12 +147,12 @@ Python, PostgreSQL, and dbt are installed inside Docker containers, so separate 
 
 ### 1. Clone the Repository
 
-```powershell
-git clone <repository-url>
+```bash
+git clone https://github.com/alexkchow2/oxalis-data-pipeline.git
 cd oxalis-data-pipeline
 ```
 
-Replace `<repository-url>` with the repository URL once the project is published.
+**Note:** This repository is private. You must have access to the repository to clone it.
 
 ### 2. Configure Environment Variables
 
